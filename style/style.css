@@ -11,7 +11,7 @@ body{
     -o-background-size: cover;
      background-size: cover;
      background-size: 100%;
-     font-family: 'Fredoka One', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 html, body {
     scrollbar-color: #458245 #714826;     /* «цвет ползунка» «цвет полосы скроллбара» */
@@ -31,7 +31,6 @@ html, body {
     position: relative;
     max-width: 1180px;
     padding: 0 30px;
-    font-family: 'Raleway Dots', cursive;
     margin: 0 auto;
 }
 .container-fluid{
@@ -136,6 +135,9 @@ a{
     line-height: 500%;
 }
 @media (max-width:824px){
+    .header{
+        height: 80px;
+    }
     .header-body{
         width: 100%;
         height: 70px; 
@@ -183,30 +185,6 @@ a{
     .header-burger.active span{
         transform: scale(0);
     }
-    /* .header-burger:before,
-    .header-burger::after{
-        content: '';
-        background-color: #fff;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        left: 0;
-        transition: all 1s;
-    } 
-    .header-burger:before{
-        top: 0;
-    }
-    .header-burger:after{
-        bottom: 0;
-    }
-    .header-burger.active:before{
-        top: 9px;
-        transform: rotate(45deg);
-    }
-    .header-burger.active:after{
-        transform: rotate(-45deg);
-        bottom: 9px;
-    } */
     .header-menu{
         position: fixed;
         top: 0;
@@ -266,6 +244,7 @@ a{
 }
 /* main */
 .swiper{
+    height:90vh;
     max-width:100%;
     z-index: 3;
 }
@@ -333,8 +312,8 @@ a{
 .frame-video {
     margin-top: 30px;
 }
-iframe{
-    width: 100%;
+video{
+    width: 50%;
     height: 520px;
 }
 .wrapper-about-me{
@@ -369,8 +348,7 @@ iframe{
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
 }
-.first-button {
-}
+
 .second-button {
     color: #ffffff;
     border: 5px solid #ffffff;
@@ -424,7 +402,7 @@ iframe{
     fill: #ffe100;
 }
 footer{
-    padding: 30px 0;
+    padding: 30px 0 70px 0;
     background-color: #111111;
 }
 .wrapper-footer {
@@ -478,7 +456,7 @@ footer{
     .link-know-price{
         display: block;
         position: fixed;
-        bottom: 15px;
+        bottom: 5px;
         width: 95%;
         left: 50%;
         transform: translate(-50%,0%);

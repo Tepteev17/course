@@ -11,8 +11,12 @@ const swiper = new Swiper('.swiper', {
       },
       pagination: {
         el: '.swiper-pagination',
+        clickable:true
       },
-      effect: 'fade'
+      effect: 'fade',
+      autoplay: {
+        delay: 5000,
+      },
 });
 
 document.addEventListener('click', (e)=>{
